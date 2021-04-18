@@ -56,4 +56,24 @@
     
   </entry>
   
+  <entry>
+    <title>hexo博客搭建</title>
+    <link href="http://blog.xulayen.com/2021/04/18/vlog/"/>
+    <id>http://blog.xulayen.com/2021/04/18/vlog/</id>
+    <published>2021-04-18T06:37:20.000Z</published>
+    <updated>2021-04-18T11:50:49.656Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>vlog教程学习记录<br><a id="more"></a></p><h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><ol><li><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2></li><li><p>便携三角架富图 PIXI+手机夹</p></li><li>博雅 枫笛手机话筒</li></ol><p>脚本</p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ol><li><a href="https://www.zhihu.com/search?q=hexo%20github&amp;utm_content=search_history&amp;type=content" target="_blank" rel="external">https://www.zhihu.com/search?q=hexo%20github&amp;utm_content=search_history&amp;type=content</a></li><li><a href="https://github.com/xulayen/blog" target="_blank" rel="external">https://github.com/xulayen/blog</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;vlog教程学习记录&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术杂烩" scheme="http://blog.xulayen.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E7%83%A9/"/>
+    
+    
+  </entry>
+  
 </feed>
