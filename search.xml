@@ -8,4 +8,12 @@
         <category>leetcode</category>
       </categories>
   </entry>
+  <entry>
+    <title><![CDATA[hexo博客搭建]]></title>
+    <url>%2F2021%2F04%2F18%2Fbuild_blog%2F</url>
+    <content type="text"><![CDATA[前言hexo博客搭建记录 记录 安装node.js 安装hexo 12345npm i hexo-cli -ghexo init npm installhexo g hexo server 配置github 配置github pages 配置ssh密钥 1npm install hexo-deployer-git --save 修改_config.yml的deploy配置 1234deploy:- type: git repo: https://github.com/xxx/xxx.github.io.git branch: master 1hexo deploy 参考 https://www.zhihu.com/search?q=hexo%20github&amp;utm_content=search_history&amp;type=content https://github.com/xulayen/blog]]></content>
+      <categories>
+        <category>技术杂烩</category>
+      </categories>
+  </entry>
 </search>
