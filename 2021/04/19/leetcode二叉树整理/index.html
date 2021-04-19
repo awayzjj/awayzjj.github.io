@@ -77,17 +77,17 @@
 
 
 
-<meta name="description" content="前言vlog教程学习记录">
+<meta name="description" content="前言本文记录二叉树相关的典型的leetcode题目。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vlog教程学习记录">
-<meta property="og:url" content="http://blog.xulayen.com/2021/04/18/vlog/index.html">
+<meta property="og:title" content="leetcode二叉树整理">
+<meta property="og:url" content="http://blog.xulayen.com/2021/04/19/leetcode二叉树整理/index.html">
 <meta property="og:site_name" content="Jeremy Chan">
-<meta property="og:description" content="前言vlog教程学习记录">
+<meta property="og:description" content="前言本文记录二叉树相关的典型的leetcode题目。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2021-04-18T15:35:59.073Z">
+<meta property="og:updated_time" content="2021-04-19T16:05:01.523Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vlog教程学习记录">
-<meta name="twitter:description" content="前言vlog教程学习记录">
+<meta name="twitter:title" content="leetcode二叉树整理">
+<meta name="twitter:description" content="前言本文记录二叉树相关的典型的leetcode题目。">
 
 
 
@@ -117,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.xulayen.com/2021/04/18/vlog/"/>
+  <link rel="canonical" href="http://blog.xulayen.com/2021/04/19/leetcode二叉树整理/"/>
 
 
 
 
 
-  <title>vlog教程学习记录 | Jeremy Chan</title>
+  <title>leetcode二叉树整理 | Jeremy Chan</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.xulayen.com/2021/04/18/vlog/">
+    <link itemprop="mainEntityOfPage" href="http://blog.xulayen.com/2021/04/19/leetcode二叉树整理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jeremy Chan">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vlog教程学习记录</h1>
+          <h1 class="post-title" itemprop="name headline">leetcode二叉树整理</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-18T14:37:20+08:00">
-                2021-04-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-19T23:45:20+08:00">
+                2021-04-19
               </time>
             
 
@@ -356,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术杂烩/" itemprop="url" rel="index">
-                    <span itemprop="name">技术杂烩</span>
+                  <a href="/categories/leetcode刷题/" itemprop="url" rel="index">
+                    <span itemprop="name">leetcode刷题</span>
                   </a>
                 </span>
 
@@ -373,7 +373,7 @@
 
           
           
-             <span id="/2021/04/18/vlog/" class="leancloud_visitors" data-flag-title="vlog教程学习记录">
+             <span id="/2021/04/19/leetcode二叉树整理/" class="leancloud_visitors" data-flag-title="leetcode二叉树整理">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -404,18 +404,21 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>vlog教程学习记录<br><a id="more"></a></p>
-<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><ol>
-<li><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2></li>
-<li><p>便携三角架富图 PIXI+手机夹</p>
-</li>
-<li>博雅 枫笛手机话筒</li>
-</ol>
-<p>脚本</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ol>
-<li><a href="https://www.zhihu.com/search?q=hexo%20github&amp;utm_content=search_history&amp;type=content" target="_blank" rel="external">https://www.zhihu.com/search?q=hexo%20github&amp;utm_content=search_history&amp;type=content</a></li>
-<li><a href="https://github.com/xulayen/blog" target="_blank" rel="external">https://github.com/xulayen/blog</a></li>
-</ol>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文记录二叉树相关的典型的leetcode题目。</p>
+<a id="more"></a>
+<h4 id="144-二叉树的前序遍历"><a href="#144-二叉树的前序遍历" class="headerlink" title="144. 二叉树的前序遍历"></a><a href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/" target="_blank" rel="external">144. 二叉树的前序遍历</a></h4><p>难度中等322</p>
+<p>给定一个二叉树，返回它的 <em>前序</em> 遍历。</p>
+<h5 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; preorderTraversal(TreeNode* root) &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">        dfs(root, res);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode* root, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; res)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (root == <span class="literal">nullptr</span>) &#123;</div><div class="line">            <span class="keyword">return</span>;</div><div class="line">        &#125;</div><div class="line">        res.push_back(root-&gt;val);</div><div class="line">        dfs(root-&gt;left, res);</div><div class="line">        dfs(root-&gt;right, res);</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h5 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; preorderTraversal(TreeNode* root) &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; call;</div><div class="line">        <span class="keyword">if</span> (root != <span class="literal">nullptr</span>) &#123;</div><div class="line">            call.push(root);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">while</span> (!call.empty()) &#123;</div><div class="line">            TreeNode* t = call.top();</div><div class="line">            call.pop();</div><div class="line"></div><div class="line">            <span class="keyword">if</span> (t != <span class="literal">nullptr</span>) &#123;</div><div class="line">                <span class="keyword">if</span> (t-&gt;right) &#123;</div><div class="line">                    call.push(t-&gt;right);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (t-&gt;left) &#123;</div><div class="line">                    call.push(t-&gt;left);</div><div class="line">                &#125;</div><div class="line">                call.push(t);</div><div class="line">                call.push(<span class="literal">nullptr</span>);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                res.push_back(call.top()-&gt;val);</div><div class="line">                call.pop();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h4 id="94-二叉树的中序遍历"><a href="#94-二叉树的中序遍历" class="headerlink" title="94. 二叉树的中序遍历"></a><a href="https://leetcode-cn.com/problems/binary-tree-inorder-traversal/" target="_blank" rel="external">94. 二叉树的中序遍历</a></h4><p>难度中等595</p>
+<p>给定一个二叉树，返回它的<em>中序</em> 遍历。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; inorderTraversal(TreeNode* root) &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; call;</div><div class="line">        <span class="keyword">if</span> (root != <span class="literal">nullptr</span>) &#123;</div><div class="line">            call.push(root);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">while</span> (!call.empty()) &#123;</div><div class="line">            TreeNode* t = call.top();</div><div class="line">            call.pop();</div><div class="line">            <span class="keyword">if</span> (t != <span class="literal">nullptr</span>) &#123;</div><div class="line">                <span class="keyword">if</span> (t-&gt;right) &#123;</div><div class="line">                    call.push(t-&gt;right);</div><div class="line">                &#125;</div><div class="line">                call.push(t);</div><div class="line">                call.push(<span class="literal">nullptr</span>);</div><div class="line">                <span class="keyword">if</span> (t-&gt;left) &#123;</div><div class="line">                    call.push(t-&gt;left);</div><div class="line">                &#125;</div><div class="line"></div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                res.push_back(call.top()-&gt;val);</div><div class="line">                call.pop();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h4 id="145-二叉树的后序遍历"><a href="#145-二叉树的后序遍历" class="headerlink" title="145. 二叉树的后序遍历"></a><a href="https://leetcode-cn.com/problems/binary-tree-postorder-traversal/" target="_blank" rel="external">145. 二叉树的后序遍历</a></h4><p>难度困难353</p>
+<p>给定一个二叉树，返回它的 <em>后序</em> 遍历。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Definition for a binary tree node.</span></div><div class="line"><span class="comment"> * struct TreeNode &#123;</span></div><div class="line"><span class="comment"> *     int val;</span></div><div class="line"><span class="comment"> *     TreeNode *left;</span></div><div class="line"><span class="comment"> *     TreeNode *right;</span></div><div class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></div><div class="line"><span class="comment"> * &#125;;</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; postorderTraversal(TreeNode* root) &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; call;</div><div class="line">        <span class="keyword">if</span> (root != <span class="literal">nullptr</span>) &#123;</div><div class="line">            call.push(root);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">while</span> (!call.empty()) &#123;</div><div class="line">            TreeNode* cur = call.top();</div><div class="line">            call.pop();</div><div class="line"></div><div class="line">            <span class="keyword">if</span> (cur != <span class="literal">nullptr</span>) &#123;</div><div class="line">                call.push(cur);</div><div class="line">                call.push(<span class="literal">nullptr</span>);</div><div class="line">                <span class="keyword">if</span> (cur-&gt;right) &#123;</div><div class="line">                    call.push(cur-&gt;right);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (cur-&gt;left) &#123;</div><div class="line">                    call.push(cur-&gt;left);</div><div class="line">                &#125;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                res.push_back(call.top()-&gt;val);</div><div class="line">                call.pop();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h4 id="剑指-Offer-07-重建二叉树"><a href="#剑指-Offer-07-重建二叉树" class="headerlink" title="剑指 Offer 07. 重建二叉树"></a><a href="https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/" target="_blank" rel="external">剑指 Offer 07. 重建二叉树</a></h4><p>难度中等421收藏分享切换为英文接收动态反馈</p>
+<p>输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function">TreeNode* <span class="title">buildTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; preorder, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; inorder)</span> </span>&#123;</div><div class="line">        <span class="comment">// 建一个哈希表，找到根结点在inorder中的下标</span></div><div class="line">        <span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; umap;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; inorder.size(); i++) &#123;</div><div class="line">            umap[inorder[i]] = i;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">return</span> build(preorder, inorder, umap, <span class="number">0</span>, <span class="number">0</span>, inorder.size() - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">// </span></div><div class="line">    <span class="function">TreeNode* <span class="title">build</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; preorder, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; inorder, <span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&amp; umap, <span class="keyword">int</span> preroot, <span class="keyword">int</span> inleft, <span class="keyword">int</span> inright)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (inleft &gt; inright) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="literal">nullptr</span>;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">int</span> index = umap[preorder[preroot]];</div><div class="line">        TreeNode* head = <span class="keyword">new</span> TreeNode(preorder[preroot]);</div><div class="line">        head-&gt;left = build(preorder, inorder, umap, preroot + <span class="number">1</span>, inleft, index - <span class="number">1</span>);</div><div class="line">        head-&gt;right = build(preorder, inorder, umap, preroot + index - inleft + <span class="number">1</span>, index + <span class="number">1</span>, inright);</div><div class="line">        <span class="keyword">return</span> head;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -463,15 +466,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2021/04/18/leetcode排序整理/" rel="next" title="leetcode排序整理">
+                <i class="fa fa-chevron-left"></i> leetcode排序整理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/04/18/build_blog/" rel="prev" title="hexo博客搭建">
-                hexo博客搭建 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -643,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#记录"><span class="nav-number">2.</span> <span class="nav-text">记录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设备"><span class="nav-number">3.</span> <span class="nav-text">设备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.1.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#144-二叉树的前序遍历"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">144. 二叉树的前序遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#递归"><span class="nav-number">1.0.0.1.1.</span> <span class="nav-text">递归</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#迭代"><span class="nav-number">1.0.0.1.2.</span> <span class="nav-text">迭代</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#94-二叉树的中序遍历"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">94. 二叉树的中序遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#145-二叉树的后序遍历"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">145. 二叉树的后序遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#剑指-Offer-07-重建二叉树"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">剑指 Offer 07. 重建二叉树</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
