@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[d2l_ch0]]></title>
+    <url>%2F2021%2F04%2F22%2Fch1%2F</url>
+    <content type="text"><![CDATA[前言d2l 12sudo apt updatesudo apt install build-essential??编译器]]></content>
+      <categories>
+        <category>d2l_v2</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[leetcode二叉树整理]]></title>
     <url>%2F2021%2F04%2F19%2Fleetcode%E4%BA%8C%E5%8F%89%E6%A0%91%E6%95%B4%E7%90%86%2F</url>
     <content type="text"><![CDATA[前言本文记录二叉树相关的典型的leetcode题目。 144. 二叉树的前序遍历难度中等322 给定一个二叉树，返回它的 前序 遍历。 递归1234567891011121314151617class Solution &#123;public: vector&lt;int&gt; preorderTraversal(TreeNode* root) &#123; vector&lt;int&gt; res; dfs(root, res); return res; &#125; void dfs(TreeNode* root, vector&lt;int&gt;&amp; res) &#123; if (root == nullptr) &#123; return; &#125; res.push_back(root-&gt;val); dfs(root-&gt;left, res); dfs(root-&gt;right, res); &#125;&#125;; 迭代1234567891011121314151617181920212223242526272829class Solution &#123;public: vector&lt;int&gt; preorderTraversal(TreeNode* root) &#123; vector&lt;int&gt; res; stack&lt;TreeNode*&gt; call; if (root != nullptr) &#123; call.push(root); &#125; while (!call.empty()) &#123; TreeNode* t = call.top(); call.pop(); if (t != nullptr) &#123; if (t-&gt;right) &#123; call.push(t-&gt;right); &#125; if (t-&gt;left) &#123; call.push(t-&gt;left); &#125; call.push(t); call.push(nullptr); &#125; else &#123; res.push_back(call.top()-&gt;val); call.pop(); &#125; &#125; return res; &#125;&#125;; 94. 二叉树的中序遍历难度中等595 给定一个二叉树，返回它的中序 遍历。 12345678910111213141516171819202122232425262728293031class Solution &#123;public: vector&lt;int&gt; inorderTraversal(TreeNode* root) &#123; vector&lt;int&gt; res; stack&lt;TreeNode*&gt; call; if (root != nullptr) &#123; call.push(root); &#125; while (!call.empty()) &#123; TreeNode* t = call.top(); call.pop(); if (t != nullptr) &#123; if (t-&gt;right) &#123; call.push(t-&gt;right); &#125; call.push(t); call.push(nullptr); if (t-&gt;left) &#123; call.push(t-&gt;left); &#125; &#125; else &#123; res.push_back(call.top()-&gt;val); call.pop(); &#125; &#125; return res; &#125;&#125;; 145. 二叉树的后序遍历难度困难353 给定一个二叉树，返回它的 后序 遍历。 123456789101112131415161718192021222324252627282930313233343536373839/** * Definition for a binary tree node. * struct TreeNode &#123; * int val; * TreeNode *left; * TreeNode *right; * TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125; * &#125;; */class Solution &#123;public: vector&lt;int&gt; postorderTraversal(TreeNode* root) &#123; vector&lt;int&gt; res; stack&lt;TreeNode*&gt; call; if (root != nullptr) &#123; call.push(root); &#125; while (!call.empty()) &#123; TreeNode* cur = call.top(); call.pop(); if (cur != nullptr) &#123; call.push(cur); call.push(nullptr); if (cur-&gt;right) &#123; call.push(cur-&gt;right); &#125; if (cur-&gt;left) &#123; call.push(cur-&gt;left); &#125; &#125; else &#123; res.push_back(call.top()-&gt;val); call.pop(); &#125; &#125; return res; &#125;&#125;; 剑指 Offer 07. 重建二叉树难度中等421收藏分享切换为英文接收动态反馈 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。 12345678910111213141516171819202122232425class Solution &#123;public: TreeNode* buildTree(vector&lt;int&gt;&amp; preorder, vector&lt;int&gt;&amp; inorder) &#123; // 建一个哈希表，找到根结点在inorder中的下标 unordered_map&lt;int, int&gt; umap; for (int i = 0; i &lt; inorder.size(); i++) &#123; umap[inorder[i]] = i; &#125; return build(preorder, inorder, umap, 0, 0, inorder.size() - 1); &#125; // TreeNode* build(vector&lt;int&gt;&amp; preorder, vector&lt;int&gt;&amp; inorder, unordered_map&lt;int, int&gt;&amp; umap, int preroot, int inleft, int inright) &#123; if (inleft &gt; inright) &#123; return nullptr; &#125; int index = umap[preorder[preroot]]; TreeNode* head = new TreeNode(preorder[preroot]); head-&gt;left = build(preorder, inorder, umap, preroot + 1, inleft, index - 1); head-&gt;right = build(preorder, inorder, umap, preroot + index - inleft + 1, index + 1, inright); return head; &#125;&#125;;]]></content>
@@ -35,7 +43,7 @@
   <entry>
     <title><![CDATA[vlog教程学习记录]]></title>
     <url>%2F2021%2F04%2F18%2Fvlog%2F</url>
-    <content type="text"><![CDATA[前言vlog教程学习记录 记录 设备 便携三角架富图 PIXI+手机夹 博雅 枫笛手机话筒 脚本 参考 https://www.zhihu.com/search?q=hexo%20github&amp;utm_content=search_history&amp;type=content https://github.com/xulayen/blog]]></content>
+    <content type="text"><![CDATA[前言vlog教程学习记录 记录 设备 便携三角架富图 PIXI+手机夹 博雅 枫笛手机话筒 脚本]]></content>
       <categories>
         <category>技术杂烩</category>
       </categories>
